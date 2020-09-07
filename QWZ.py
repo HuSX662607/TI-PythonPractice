@@ -47,7 +47,7 @@ def QWZDispersion(w,mu_L,h_L,mu_R,h_R):
         VecK = VecK.tolist()
         VecK.append(Ek)
         VecK = np.array(VecK)
-        VecK = VecK.T[np.lexsort(VecK)].T #按最后一行排序
+        VecK = VecK.T[np.lexsort(VecK)].T 
         Ek=VecK[-1]
         VecK=VecK[:-1]
 
