@@ -2,7 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-I=0+1j #定义虚数单位
+I=0+1j 
 sx=np.array([[0,1],
              [1,0]])
 sy=np.array([[0,-I],
