@@ -13,7 +13,7 @@ def FiniteSizeDispersion(v,w):
     Vec = Vec.tolist()
     Vec.append(E)
     Vec = np.array(Vec)
-    Vec = Vec.T[np.lexsort(Vec)].T #按最后一行排序
+    Vec = Vec.T[np.lexsort(Vec)].T 
     E=Vec[-1]
     Vec=Vec[:-1]
     return E,Vec
