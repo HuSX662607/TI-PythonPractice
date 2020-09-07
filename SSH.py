@@ -16,7 +16,7 @@ def SSHdispersion(v,w,K,Energy1,Energy2,Dx,Dy):
         + w*(np.kron(hop2,(pm.sx-pm.I*pm.sy)/2)+np.kron(np.transpose(hop2),(pm.sx+pm.I*pm.sy)/2))\
         + w*(np.eye(2*N,k=2*N-1)+np.eye(2*N,k=-2*N+1))
 
-    for n in range(0,N+1): #为了画图时把k=-\pi的点画上，多了一位n=0
+    for n in range(0,N+1): 
         U=[]
         for x in range(1,N+1):
             U.append([np.exp(pm.I*K[n]*x),0])
